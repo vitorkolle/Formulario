@@ -18,6 +18,9 @@ botaoIdentificarParOuImpar.addEventListener('click', identificarParOuImpar)
 const botaoIdentificar09 = document.getElementById('identificar-09')
 botaoIdentificar09.addEventListener('click', identificar09)
 
+const multiplicacao30 = document.getElementById('multiplicar')
+multiplicacao30.addEventListener('click', multiplicar)
+
 function somar(){
     const num1 = Number(document.getElementById('num1').value)
     const num2 = Number(document.getElementById('num2').value)
@@ -101,4 +104,16 @@ function identificar09(){
     }else{
         alert('O valor está fora da faixa permitida')
     }
+}
+
+function multiplicar(){
+    const valor1 = Number(document.getElementById('valor1').value)
+    const resultadoMultiplicacao = document.getElementById('multiplicacao30')
+
+    resultadoMultiplicacao.textContent = valor1 * 2
+
+    if(resultadoMultiplicacao.textContent > 30){
+        alert(resultadoMultiplicacao.textContent)
+    }
+
 }
