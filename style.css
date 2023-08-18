@@ -1,0 +1,57 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px;
+    gap: 16px;
+}
+.item{
+    background-color: black;
+    height: 50px;
+    min-width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    color: aliceblue;
+    padding-inline: 16px;
+    margin-top: 20px;
+}
+button{
+    padding: 0px 8px;
+}
+.resultado{
+    width: 75px;
+    height: 20px;
+    background-color: aqua;
+    color: black;
+}
+
+.exame{
+    display: none;
+}
+.exame-reprovado{
+    display: flex;
+    gap: 4px;
+}
+
+.resultadoFinal{
+    width: 75px;
+    height: 20px;
+    background-color: aqua;
+    color: black;
+}
+.resultadoRec{
+    width: 1px;
+    height: 1px;
+    background-color: transparent;
+    color: black;
+
+}
