@@ -12,6 +12,12 @@ botaoCalcularMedia.addEventListener('click', calcularMedia)
 const botaoCalcularExame = document.getElementById('calcExame')
 botaoCalcularExame.addEventListener('click', calcularExame)
 
+const botaoIdentificarParOuImpar = document.getElementById('identificar-par/impar')
+botaoIdentificarParOuImpar.addEventListener('click', identificarParOuImpar)
+
+const botaoIdentificar09 = document.getElementById('identificar-09')
+botaoIdentificar09.addEventListener('click', identificar09)
+
 function somar(){
     const num1 = Number(document.getElementById('num1').value)
     const num2 = Number(document.getElementById('num2').value)
@@ -69,4 +75,30 @@ function calcularExame(){
     }
 
   
+}
+
+function identificarParOuImpar(){
+
+    const valor = Number(document.getElementById('valor').value)
+    const resultadoComparacao = document.getElementById('resultadoComparacao')
+
+    if(valor % 2 == 0){
+        resultadoComparacao.textContent = 'Par' 
+    }else{
+        resultadoComparacao.textContent = 'Ímpar'
     }
+
+}
+
+function identificar09(){
+    const valor09 = Number(document.getElementById('valor09').value)
+    const resultadoComparacao09 = document.getElementById('resultadoComparacao09')
+   
+    resultadoComparacao09.textContent = valor09
+
+    if (valor09 >= 1 && valor09 <= 9){
+        alert('O valor está na faixa permitida')
+    }else{
+        alert('O valor está fora da faixa permitida')
+    }
+}

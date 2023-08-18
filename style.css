@@ -49,9 +49,9 @@ button{
     color: black;
 }
 .resultadoRec{
-    width: 1px;
-    height: 1px;
-    background-color: transparent;
+    width: 75px;
+    height: 20px;
+    background-color: aqua;
     color: black;
 
 }
